@@ -35,21 +35,21 @@ mod problem_2_test {
         assert!(is_string_permutation(&string_a, &string_b));
     }
 
-   #[test]
+    #[test]
     fn permut_string_test2() {
         let string_a = String::from("abcdefgh");
         let string_b = String::from("acdefgha");
         assert!(!is_string_permutation(&string_a, &string_b));
     }
 
-   #[test]
+    #[test]
     fn permut_string_test3() {
         let string_a = String::from("abcddfgh");
         let string_b = String::from("bcddfgha");
         assert!(is_string_permutation(&string_a, &string_b));
     }
 
-   #[test]
+    #[test]
     fn permut_string_test4() {
         let string_a = String::from("abcdefgh");
         let string_b = String::from("abcdefg");
@@ -57,16 +57,16 @@ mod problem_2_test {
     }
 
     #[test]
-     fn permut_string_test5() {
-         let string_a = String::from("abcdeash");
-         let string_b = String::from("abcdasfg");
-         assert!(!is_string_permutation(&string_a, &string_b));
-     }
+    fn permut_string_test5() {
+        let string_a = String::from("abcdeash");
+        let string_b = String::from("abcdasfg");
+        assert!(!is_string_permutation(&string_a, &string_b));
+    }
 
     #[test]
-     fn permut_string_test6() {
-         let string_a = String::from("abcdefgh");
-         let string_b = String::from("acbdfehg");
-         assert!(is_string_permutation(&string_a, &string_b));
-     }
+    fn permut_string_test6() {
+        let string_a = String::from("abcdefgh");
+        let string_b = String::from("acbdfehg");
+        assert!(is_string_permutation(&string_a, &string_b));
+    }
 }
