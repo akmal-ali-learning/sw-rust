@@ -71,6 +71,12 @@ mod problem_1_test {
         assert!(is_string_unique_hashmap(&x));
     }
 
+    #[test]
+    fn long_unique_string() {
+        let x = String::from("abcdefghijlmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVXYZ.;,123456789");
 
+        assert!(is_string_unique(&x));
+        assert!(is_string_unique_hashmap(&x));
+    }
 
 }
